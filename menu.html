@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Classic Plaza - Menu</title>
+</head>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f6f2;
+    color: #2c3e50;
+    padding: 2rem;
+}
+
+.menu-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #e0d5c1;
+}
+
+.menu-header h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.divider {
+    color: #c0a080;
+    letter-spacing: 1rem;
+    margin: 1rem 0;
+}
+
+.subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+}
+
+.menu-section {
+    margin-bottom: 3rem;
+}
+
+.menu-section h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    position: relative;
+}
+
+.menu-section h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #c0a080;
+    margin: 0.5rem auto;
+}
+
+.menu-items {
+    display: grid;
+    gap: 2rem;
+}
+
+.menu-item {
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed #e0d5c1;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+}
+
+.item-header h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    color: #2c3e50;
+}
+
+.price {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #c0a080;
+}
+
+.description {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 300;
+}
+
+.menu-footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 2px solid #e0d5c1;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.menu-footer p {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    .menu-wrapper {
+        padding: 2rem;
+    }
+
+    .menu-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .divider {
+        letter-spacing: 0.5rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .menu-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+</style>
+<body>
+    <div class="menu-wrapper">
+        <header class="menu-header">
+            <h1>Hotel Classic Plaza</h1>
+            <div class="divider">✦ ✦ ✦</div>
+            <p class="subtitle">Fine Dining & Bar</p>
+        </header>
+
+        <section class="menu-section">
+            <h2>Appetizers</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3>Classic Caesar Salad</h3>
+                        <span class="price">$12</span>
+                    </div>
+                    <p class="description">Crisp romaine lettuce, parmesan crisps, house-made dressing</p>
+                </div>
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3>Bruschetta</h3>
+                        <span class="price">$10</span>
+                    </div>
+                    <p class="description">Toasted baguette, fresh tomatoes, basil, garlic, olive oil</p>
+                </div>
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3>Shrimp Cocktail</h3>
+                        <span class="price">$16</span>
+                    </div>
+                    <p class="description">Jumbo shrimp, house-made cocktail sauce, lemon</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Main Course</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3>Grilled Salmon</h3>
+                        <span class="price">$28</span>
+                    </div>
+                    <p class="description">Atlantic salmon, herb butter sauce, seasonal vegetables</p>
+                </div>
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3>Beef Tenderloin</h3>
+                        <span class="price">$34</span>
+                    </div>
+                    <p class="description">8oz filet, red wine reduction, truffle mashed potatoes</p>
+                </div>
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3>Pasta Primavera</h3>
+                        <span class="price">$18</span>
+                    </div>
+                    <p class="description">Fresh fettuccine, seasonal vegetables, white wine sauce</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Bar Selection</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3>Classic Martini</h3>
+                        <span class="price">$12</span>
+                    </div>
+                    <p class="description">Gin or vodka, dry vermouth, olive or lemon twist</p>
+                </div>
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3>House Wine</h3>
+                        <span class="price">$8</span>
+                    </div>
+                    <p class="description">Selection of red, white, or rosé</p>
+                </div>
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3>Signature Cocktail</h3>
+                        <span class="price">$14</span>
+                    </div>
+                    <p class="description">House-infused spirits, fresh ingredients, artisanal mixers</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="menu-footer">
+            <p>Please inform your server of any allergies or dietary restrictions</p>
+            <p>18% gratuity added to parties of 6 or more</p>
+        </footer>
+    </div>
+</body>
+</html>
